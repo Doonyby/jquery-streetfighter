@@ -13,6 +13,21 @@ $(document).ready(function() {
     playHadouken();
     $('.ryu-ready').hide();
     $('.ryu-cool').hide();
+<<<<<<< HEAD
+  	$('.ryu-throwing').show();
+	$('.hadouken').finish().show().animate(
+  		{'left': '1020px'},
+  		500,
+  		function() {
+    		$(this).hide();
+    		$(this).css('left', '520px');
+  		});
+  	})
+  
+  .mouseup(function() {
+    $('.ryu-throwing').hide();
+  	$('.ryu-ready').hide();
+=======
     $('.ryu-throwing').show();
     $('.hadouken').finish().show().animate(
       {'left': '1020px'},
@@ -26,11 +41,31 @@ $(document).ready(function() {
   .mouseup(function() {
     $('.ryu-throwing').hide();
     $('.ryu-ready').hide();
+>>>>>>> gh-pages
     $('.ryu-cool').hide();
     $('.ryu-still').show();
   })
 
 
+<<<<<<< HEAD
+    $('body').keydown(function(e){
+        if(e.keyCode == 88){
+      $('.ryu-ready').hide();
+ 			$('.ryu-still').hide();
+ 			$('.ryu-throwing').hide();
+ 			$('.ryu-cool').show(); 
+ 		}
+   	});
+
+   	$('body').keyup(function(e){
+        if(e.keyCode == 88){
+ 			$('.ryu-cool').hide();
+      $('.ryu-ready').hide();
+      $('.ryu-throwing').hide(); 
+ 			$('.ryu-still').show();
+ 		}
+   	});
+=======
   $('body').keydown(function(e) {
     if(e.keyCode == 88) {
       $('.ryu-ready').hide();
@@ -48,6 +83,7 @@ $(document).ready(function() {
       $('.ryu-still').show();
     }
   });
+>>>>>>> gh-pages
 }); 
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
